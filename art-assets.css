@@ -8,7 +8,7 @@
     width:34px;
     height:38px;
     transform:translateY(-50%);
-    background:url('/assets/elaris-symbol.svg') center/contain no-repeat;
+    background:url('/assets/elaris-symbol-transparent.png') center/contain no-repeat;
     pointer-events:none;
     z-index:1;
   }
