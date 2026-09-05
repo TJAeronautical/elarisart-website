@@ -5,10 +5,12 @@
     position:absolute;
     left:24px;
     top:50%;
-    width:34px;
-    height:38px;
+    width:38px;
+    height:42px;
     transform:translateY(-50%);
-    background:url('/assets/elaris-symbol-transparent.png') center/contain no-repeat;
+    background:url('/assets/elaris-symbol.svg') center/contain no-repeat;
+    background-color:transparent;
+    mix-blend-mode:multiply;
     pointer-events:none;
     z-index:1;
   }
