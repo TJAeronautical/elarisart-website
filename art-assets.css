@@ -20,11 +20,13 @@
     z-index:1;
   }
   .header .brand:before{font-weight:600}
-  .header nav{display:none;position:fixed;inset:0;background:#fff;z-index:18;flex-direction:column;justify-content:center;align-items:center;padding:88px 24px 70px;gap:0;text-align:center;font-family:'DM Sans',Arial,sans-serif;font-size:16px;font-weight:400;letter-spacing:.13em;text-transform:uppercase}
-  .header nav.open{display:flex}
+  .header nav{display:none!important;position:fixed;inset:0;background:#fff;z-index:9998;flex-direction:column;justify-content:center;align-items:center;padding:88px 24px 70px;gap:0;text-align:center;font-family:'DM Sans',Arial,sans-serif;font-size:16px;font-weight:400;letter-spacing:.13em;text-transform:uppercase}
+  body.menu-open .header nav,.header nav.open{display:flex!important}
   .header nav a{width:auto;min-width:260px;padding:20px 10px;border:0!important;line-height:1.2}
   .header nav a:first-child{border:0!important}
-  .menu{z-index:20}
+  body.menu-open .header .brand{visibility:hidden}
+  body.menu-open .header:before{display:none}
+  .menu{z-index:9999}
   .hero-copy{display:none}
   .hero{display:block;min-height:auto;padding:42px 0 52px}
   .hero-mark{min-height:430px;display:grid;place-items:center}
