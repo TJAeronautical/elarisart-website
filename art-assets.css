@@ -1,4 +1,5 @@
 .art-image{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;background:#eee7db}
+.artist-label{display:flex;align-items:center;justify-content:center;text-align:center;min-height:112px;padding:28px 20px;border-top:1px solid rgba(23,23,23,.28);border-bottom:1px solid rgba(23,23,23,.28);font-family:'Montserrat',Arial,sans-serif;font-size:28px;font-weight:500;letter-spacing:.08em;line-height:1.2;text-transform:uppercase;color:#171717;background:#f6f1e7}
 @media(max-width:850px){
   .header:before{
     content:'';
@@ -14,6 +15,6 @@
     pointer-events:none;
     z-index:1;
   }
-
+  .artist-label{min-height:96px;padding:24px 20px;font-size:17px;letter-spacing:.07em}
   .menu{z-index:2}
 }
