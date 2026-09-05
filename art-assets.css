@@ -15,6 +15,7 @@
     pointer-events:none;
     z-index:1;
   }
+  .header .brand:before{font-weight:600}
   .hero-copy{display:none}
   .hero{display:block;min-height:auto;padding:42px 0 52px}
   .hero-mark{min-height:430px;display:grid;place-items:center}
