@@ -1,5 +1,8 @@
 .art-image{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;background:#eee7db}
 .artist-label{display:flex;align-items:center;justify-content:center;text-align:center;min-height:112px;padding:28px 20px;border-top:1px solid rgba(23,23,23,.28);border-bottom:1px solid rgba(23,23,23,.28);font-family:'Montserrat',Arial,sans-serif;font-size:28px;font-weight:500;letter-spacing:.08em;line-height:1.2;text-transform:uppercase;color:#171717;background:#f6f1e7}
+.home-about{width:min(1040px,calc(100vw - 80px));margin:0 auto;padding:86px 0 98px;color:#171717;background:#f6f1e7}
+.home-about p{max-width:900px;margin:0 0 26px;font-family:'DM Sans',Arial,sans-serif;font-size:20px;font-weight:300;line-height:1.65;letter-spacing:.01em}
+.home-about .arrow-link{margin-top:16px}
 @media(max-width:850px){
   .header:before{
     content:'';
@@ -20,5 +23,7 @@
   .hero{display:block;min-height:auto;padding:42px 0 52px}
   .hero-mark{min-height:430px;display:grid;place-items:center}
   .artist-label{min-height:96px;padding:24px 20px;font-size:17px;letter-spacing:.07em}
+  .home-about{width:calc(100vw - 64px);padding:54px 0 64px}
+  .home-about p{font-size:16px;line-height:1.68;margin-bottom:22px}
   .menu{z-index:2}
 }
