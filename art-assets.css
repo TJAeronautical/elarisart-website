@@ -3,6 +3,7 @@
 .home-about{width:min(1040px,calc(100vw - 80px));margin:0 auto;padding:86px 0 98px;color:#171717;background:#f6f1e7}
 .home-about p{max-width:900px;margin:0 0 26px;font-family:'DM Sans',Arial,sans-serif;font-size:20px;font-weight:300;line-height:1.65;letter-spacing:.01em}
 .home-about .arrow-link{margin-top:16px}
+body.splash-active{overflow:hidden}.site-splash{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:#f6f1e7;opacity:1;visibility:visible;transition:opacity .55s ease,visibility .55s ease}.site-splash.is-leaving{opacity:0;visibility:hidden}.site-splash-inner{text-align:center;transform:translateY(-2vh)}.site-splash-name{font-family:'Montserrat',Arial,sans-serif;font-size:clamp(21px,3vw,38px);font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#171717}.site-splash-role{margin-top:9px;font-family:'DM Sans',Arial,sans-serif;font-size:13px;font-weight:300;letter-spacing:.28em;color:#171717}
 @media(max-width:850px){
   .header:before{
     content:'';
@@ -25,5 +26,8 @@
   .artist-label{min-height:96px;padding:24px 20px;font-size:17px;letter-spacing:.07em}
   .home-about{width:calc(100vw - 64px);padding:54px 0 64px}
   .home-about p{font-size:16px;line-height:1.68;margin-bottom:22px}
+  .site-splash-inner{transform:translateY(-1vh)}
+  .site-splash-name{font-size:21px;letter-spacing:.17em}
+  .site-splash-role{font-size:11px;letter-spacing:.24em}
   .menu{z-index:2}
 }
