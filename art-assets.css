@@ -3,7 +3,7 @@
 .home-about{width:min(1040px,calc(100vw - 80px));margin:0 auto;padding:86px 0 98px;color:#171717;background:#f6f1e7}
 .home-about p{max-width:900px;margin:0 0 26px;font-family:'DM Sans',Arial,sans-serif;font-size:20px;font-weight:300;line-height:1.65;letter-spacing:.01em}
 .home-about .arrow-link{margin-top:16px}
-body.splash-active{overflow:hidden}.site-splash{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:#f6f1e7;opacity:1;visibility:visible;transition:opacity .55s ease,visibility .55s ease}.site-splash.is-leaving{opacity:0;visibility:hidden}.site-splash-inner{text-align:center;transform:translateY(-2vh)}.site-splash-name{font-family:'Montserrat',Arial,sans-serif;font-size:clamp(21px,3vw,38px);font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#171717}.site-splash-role{margin-top:9px;font-family:'DM Sans',Arial,sans-serif;font-size:13px;font-weight:300;letter-spacing:.28em;color:#171717}
+.site-splash{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:#f6f1e7;opacity:1;visibility:visible;pointer-events:none;animation:splashFade 2s ease forwards}.site-splash-inner{text-align:center;transform:translateY(-2vh)}.site-splash-name{font-family:'Montserrat',Arial,sans-serif;font-size:clamp(21px,3vw,38px);font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#171717}.site-splash-role{margin-top:9px;font-family:'DM Sans',Arial,sans-serif;font-size:13px;font-weight:300;letter-spacing:.28em;color:#171717}@keyframes splashFade{0%,58%{opacity:1;visibility:visible}100%{opacity:0;visibility:hidden}}
 @media(max-width:850px){
   .header:before{
     content:'';
