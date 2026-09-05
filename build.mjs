@@ -6,7 +6,7 @@ await mkdir(out, { recursive: true });
 
 const files = [
   'index.html','about.html','work.html','commissions.html','contact.html',
-  'styles.css','site.js','robots.txt','sitemap.xml','_headers','_redirects'
+  'styles.css','art-assets.css','site.js','robots.txt','sitemap.xml','_headers','_redirects'
 ];
 
 for (const file of files) await cp(file, `${out}/${file}`);
