@@ -3,7 +3,7 @@
 .home-about{width:min(1040px,calc(100vw - 80px));margin:0 auto;padding:86px 0 98px;color:#171717;background:#f6f1e7}
 .home-about p{max-width:900px;margin:0 0 26px;font-family:'DM Sans',Arial,sans-serif;font-size:20px;font-weight:300;line-height:1.65;letter-spacing:.01em}
 .home-about .arrow-link{margin-top:16px}
-.site-splash{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:#f6f1e7;opacity:1;visibility:visible;pointer-events:none;animation:splashFade 2s ease forwards}.site-splash-inner{text-align:center;transform:translateY(-2vh)}.site-splash-name{font-family:'Montserrat',Arial,sans-serif;font-size:clamp(21px,3vw,38px);font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#171717}.site-splash-role{margin-top:9px;font-family:'DM Sans',Arial,sans-serif;font-size:13px;font-weight:300;letter-spacing:.28em;color:#171717}@keyframes splashFade{0%,58%{opacity:1;visibility:visible}100%{opacity:0;visibility:hidden}}
+.site-splash{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:#fff;opacity:1;visibility:visible;pointer-events:none;animation:splashFade 3.25s cubic-bezier(.55,.08,.4,1) forwards}.site-splash-inner{text-align:center;transform:translateY(-1vh);animation:splashText 3.25s cubic-bezier(.55,.08,.4,1) forwards}.site-splash-name{font-family:'Montserrat',Arial,sans-serif;font-size:clamp(21px,3vw,38px);font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#171717}@keyframes splashFade{0%,86%{opacity:1;visibility:visible}93%{opacity:.58}100%{opacity:0;visibility:hidden}}@keyframes splashText{0%,82%{opacity:1}91%{opacity:.38}100%{opacity:0}}
 @media(max-width:850px){
   .header:before{
     content:'';
@@ -28,6 +28,5 @@
   .home-about p{font-size:16px;line-height:1.68;margin-bottom:22px}
   .site-splash-inner{transform:translateY(-1vh)}
   .site-splash-name{font-size:21px;letter-spacing:.17em}
-  .site-splash-role{font-size:11px;letter-spacing:.24em}
   .menu{z-index:2}
 }
