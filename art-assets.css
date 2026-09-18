@@ -5,27 +5,12 @@
 .home-about .arrow-link{margin-top:16px}
 .site-splash{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:#fff;opacity:1;visibility:visible;pointer-events:none;animation:splashFade 3.25s cubic-bezier(.55,.08,.4,1) forwards}.site-splash-inner{text-align:center;transform:translateY(-1vh);animation:splashText 3.25s cubic-bezier(.55,.08,.4,1) forwards}.site-splash-name{font-family:'Montserrat',Arial,sans-serif;font-size:clamp(21px,3vw,38px);font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#171717}@keyframes splashFade{0%,86%{opacity:1;visibility:visible}93%{opacity:.58}100%{opacity:0;visibility:hidden}}@keyframes splashText{0%,82%{opacity:1}91%{opacity:.38}100%{opacity:0}}
 @media(max-width:850px){
-  .header:before{
-    content:'';
-    position:absolute;
-    left:24px;
-    top:50%;
-    width:38px;
-    height:42px;
-    transform:translateY(-50%);
-    background:url('/assets/elaris-symbol.svg') center/contain no-repeat;
-    background-color:transparent;
-    mix-blend-mode:multiply;
-    pointer-events:none;
-    z-index:1;
-  }
   .header .brand:before{font-weight:600}
   .header nav{display:none!important;position:fixed;inset:0;background:#fff;z-index:9998;flex-direction:column;justify-content:center;align-items:center;padding:88px 24px 70px;gap:0;text-align:center;font-family:'DM Sans',Arial,sans-serif;font-size:16px;font-weight:400;letter-spacing:.13em;text-transform:uppercase}
   body.menu-open .header nav,.header nav.open{display:flex!important}
   .header nav a{width:auto;min-width:260px;padding:20px 10px;border:0!important;line-height:1.2}
   .header nav a:first-child{border:0!important}
   body.menu-open .header .brand{visibility:hidden}
-  body.menu-open .header:before{display:none}
   .menu{z-index:9999}
   .hero-copy{display:none}
   .hero{display:block;min-height:auto;padding:42px 0 52px}
