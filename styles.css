@@ -83,3 +83,6 @@
   .artwork-meta{margin-bottom:24px}
   .artwork-back{width:calc(100vw - 64px);padding:24px 0 42px}
 }
+
+/* Force artwork detail white canvas */
+body:has(.artwork-detail-page),.artwork-detail-page,.artwork-detail,.artwork-detail-image,.artwork-back{background:#fff!important}
