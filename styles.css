@@ -107,3 +107,22 @@ body:has(.artwork-detail-page),.artwork-detail-page,.artwork-detail,.artwork-det
     aspect-ratio:auto;
   }
 }
+
+/* Mobile menu tap target hardening */
+@media(max-width:850px){
+  .header{position:relative;z-index:40000}
+  .menu{
+    position:absolute!important;
+    right:14px;
+    top:50%;
+    transform:translateY(-50%);
+    width:58px!important;
+    height:58px!important;
+    z-index:40002!important;
+    pointer-events:auto!important;
+    touch-action:manipulation;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .menu:before,.menu:after{left:16px!important;right:16px!important}
+  .header nav{z-index:40001!important}
+}
