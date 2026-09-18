@@ -21,3 +21,7 @@
   .site-splash-inner{transform:translateY(-1vh)}
   .site-splash-name{font-size:21px;letter-spacing:.17em}
 }
+
+/* iOS splash safe-area */
+html{background:#fff}
+.site-splash{top:0;right:0;bottom:0;left:0;min-height:100dvh;background:#fff!important}
