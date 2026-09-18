@@ -11,4 +11,5 @@ const files = [
 
 for (const file of files) await cp(file, `${out}/${file}`);
 await cp('assets', `${out}/assets`, { recursive: true });
+await cp('untitled-i', `${out}/untitled-i`, { recursive: true });
 console.log(`Built ${files.length} static assets plus the assets directory into ${out}/`);
