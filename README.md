@@ -1,6 +1,6 @@
 # Elaris Art Studio
 
-Official website source for **Elaris Art Studio** — contemporary works by **Mariyam Shahaa Zakee**.
+Official website source for **Elaris Art Studio** — contemporary works by **Mariyam Shahaa**.
 
 Primary domain: **https://elarisartstudio.com**
 
