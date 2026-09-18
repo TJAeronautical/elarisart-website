@@ -55,3 +55,31 @@
   .artwork-info h2{font-size:29px;margin:8px 0 14px}
   .artwork-info p:not(.kicker){font-size:14px}
 }
+/* Elaris artwork detail page */
+.artwork-detail-page{background:#fff}
+.artwork-detail{min-height:calc(100svh - 96px);display:grid;grid-template-columns:minmax(0,1.65fr) minmax(360px,.7fr);border-bottom:1px solid var(--line)}
+.artwork-detail-image{display:flex;align-items:center;justify-content:center;padding:70px 6vw;background:#f7f7f5;border-right:1px solid var(--line)}
+.artwork-detail-image img{display:block;width:min(820px,86%);max-height:72vh;object-fit:contain}
+.artwork-detail-panel{padding:clamp(70px,9vh,120px) 5vw 70px;display:flex;flex-direction:column;justify-content:flex-start;background:#fff}
+.artwork-detail-panel h1{font-family:var(--sans);font-weight:500;font-size:20px;letter-spacing:.08em;text-transform:uppercase;margin:12px 0 12px;color:var(--ink)}
+.artwork-meta{font-size:14px;line-height:1.7;margin-bottom:34px}
+.artwork-meta p{margin:0}
+.artwork-enquiry{margin-top:12px}
+.artwork-enquiry>p{font-size:14px;margin:0 0 24px}
+.artwork-enquiry #contact-form{gap:18px}
+.artwork-enquiry #contact-form label{font-size:0;letter-spacing:0;text-transform:none}
+.artwork-enquiry #contact-form input,.artwork-enquiry #contact-form textarea{font-family:var(--sans);font-size:14px;letter-spacing:.08em;padding:13px 0;color:var(--ink);border-bottom:1px solid #222}
+.artwork-enquiry #contact-form textarea{min-height:72px;resize:vertical}
+.artwork-enquiry #contact-form input::placeholder,.artwork-enquiry #contact-form textarea::placeholder{color:#aaa}
+.artwork-enquiry #contact-form input[readonly]{color:#777}
+.artwork-submit{width:100%;border:0;background:#111;color:#fff;padding:14px 18px;font-size:14px;cursor:pointer;margin-top:2px}
+.artwork-back{width:var(--page);margin:0 auto;padding:26px 0 52px;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+@media(max-width:850px){
+  .artwork-detail{grid-template-columns:1fr;min-height:auto}
+  .artwork-detail-image{border-right:0;border-bottom:1px solid var(--line);padding:42px 24px}
+  .artwork-detail-image img{width:100%;max-height:none}
+  .artwork-detail-panel{padding:38px 32px 48px}
+  .artwork-detail-panel h1{font-size:18px}
+  .artwork-meta{margin-bottom:24px}
+  .artwork-back{width:calc(100vw - 64px);padding:24px 0 42px}
+}
