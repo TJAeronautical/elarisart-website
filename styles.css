@@ -28,3 +28,30 @@
   .shipping-block p{font-size:14px;line-height:1.68}
   .shipping-email{font-size:21px;margin-top:18px}
 }
+/* Elaris artworks page */
+.artworks-page{background:var(--ivory)}
+.artworks-intro,.artworks-list{width:min(960px,calc(100vw - 80px));margin:0 auto}
+.artworks-intro{padding:72px 0 58px}
+.artworks-intro h1{font-family:var(--serif);font-weight:400;color:var(--navy);font-size:clamp(44px,5vw,72px);line-height:.98;letter-spacing:-.03em;margin:14px 0 26px}
+.artworks-lead{font-family:var(--serif);font-size:20px;line-height:1.5;max-width:680px;margin:0}
+.artworks-list{padding-bottom:90px}
+.artwork-row{display:grid;grid-template-columns:minmax(280px,.95fr) minmax(260px,.7fr);gap:54px;align-items:center;padding:42px 0;border-top:1px solid var(--line)}
+.artwork-media{width:100%;aspect-ratio:4/5;overflow:hidden;background:#e7e1d7}
+.artwork-media img{display:block;width:100%;height:100%;object-fit:contain}
+.artwork-media.placeholder{display:grid;place-items:center;color:rgba(247,243,233,.82);font-size:8px;letter-spacing:.24em;position:relative}
+.artwork-media.placeholder:before,.artwork-media.placeholder:after{content:'';position:absolute;border:2px solid currentColor;width:70%;height:32%;border-radius:50%;transform:rotate(23deg)}
+.artwork-media.placeholder:after{transform:rotate(-38deg);width:52%;height:66%}
+.artwork-media.placeholder span{position:relative;z-index:2}
+.artwork-info h2{font-family:var(--serif);font-weight:400;color:var(--navy);font-size:clamp(30px,3.2vw,44px);line-height:1.08;letter-spacing:-.02em;margin:10px 0 18px}
+.artwork-info p:not(.kicker){font-size:14px;line-height:1.65;margin:4px 0;color:var(--muted)}
+.artwork-link{display:inline-block;margin-top:20px;padding-bottom:3px;border-bottom:1px solid var(--navy);font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+@media(max-width:850px){
+  .artworks-intro,.artworks-list{width:calc(100vw - 64px)}
+  .artworks-intro{padding:48px 0 40px}
+  .artworks-intro h1{font-size:38px;margin:12px 0 20px}
+  .artworks-lead{font-size:17px;line-height:1.55}
+  .artwork-row{grid-template-columns:1fr;gap:22px;padding:34px 0}
+  .artwork-media{aspect-ratio:4/5}
+  .artwork-info h2{font-size:29px;margin:8px 0 14px}
+  .artwork-info p:not(.kicker){font-size:14px}
+}
