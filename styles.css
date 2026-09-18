@@ -334,3 +334,124 @@ footer .footer-bottom{border-color:rgba(244,241,234,.18)!important}
     padding-right:32px!important;
   }
 }
+
+/* Elaris balanced editorial gallery */
+:root{
+  --midnight:#101b2d;
+  --paper:#f7f5ef;
+  --stone:#d7d3ca;
+  --champagne:#bda77a;
+  --ink:#17191d;
+}
+body{background:var(--paper)!important;color:var(--ink)!important}
+
+/* Dark only where it adds drama */
+.header{
+  background:var(--midnight)!important;
+  color:var(--paper)!important;
+}
+.header .brand,.header nav{color:var(--paper)!important}
+.header .brand span{color:var(--champagne)!important}
+.header nav a:hover,.header nav a[aria-current=page]{border-color:var(--champagne)!important}
+
+.hero{
+  background:var(--midnight)!important;
+  color:var(--paper)!important;
+  min-height:62vh!important;
+}
+.hero h1,.hero .intro{color:var(--paper)!important}
+.hero .kicker{color:var(--champagne)!important}
+
+/* Light editorial body */
+.artist-label{
+  background:var(--stone)!important;
+  color:var(--ink)!important;
+  border-color:rgba(16,27,45,.13)!important;
+}
+.home-about{
+  background:var(--paper)!important;
+  color:var(--ink)!important;
+}
+.quote{
+  background:var(--paper)!important;
+  color:var(--midnight)!important;
+  border-top:1px solid rgba(16,27,45,.12);
+  border-bottom:1px solid rgba(16,27,45,.12);
+}
+.quote blockquote{color:var(--midnight)!important}
+.quote p{color:var(--champagne)!important}
+.newsletter{
+  background:var(--stone)!important;
+  color:var(--midnight)!important;
+}
+.newsletter h2{color:var(--midnight)!important}
+
+/* Inner pages: refined, mostly light */
+.page-hero{
+  background:var(--paper)!important;
+  color:var(--ink)!important;
+}
+.page-hero h1{color:var(--midnight)!important}
+.page-hero .lead{color:var(--ink)!important}
+.page-hero .kicker{color:var(--champagne)!important}
+
+.artworks-page{background:var(--paper)!important}
+.artworks-intro{
+  background:var(--paper)!important;
+  color:var(--ink)!important;
+  border-bottom:1px solid rgba(16,27,45,.12);
+}
+.artworks-intro h1{color:var(--midnight)!important}
+.artworks-intro .artworks-lead{color:var(--ink)!important}
+.artworks-list{background:var(--paper)!important}
+.artwork-row{border-color:rgba(16,27,45,.12)!important}
+.artwork-info h2{color:var(--midnight)!important}
+.artwork-link{border-color:var(--midnight)!important}
+
+.shipping-page{background:var(--paper)!important}
+.shipping-intro{
+  background:var(--paper)!important;
+  color:var(--ink)!important;
+  border-bottom:1px solid rgba(16,27,45,.12);
+}
+.shipping-intro h1{color:var(--midnight)!important}
+.shipping-intro .shipping-lead{color:var(--ink)!important}
+
+.contact{
+  background:var(--paper)!important;
+  color:var(--ink)!important;
+}
+.contact h1{color:var(--midnight)!important}
+.contact-email{color:var(--midnight)!important}
+
+.artist-feature,.process{background:var(--paper)!important}
+
+/* Footer should feel quiet, not like another hero */
+footer{
+  background:#ece8df!important;
+  color:var(--ink)!important;
+  border-top:1px solid rgba(16,27,45,.12)!important;
+}
+footer .brand{color:var(--midnight)!important}
+footer .brand span{color:var(--champagne)!important}
+footer .footer-bottom{border-color:rgba(16,27,45,.12)!important}
+
+/* Artwork detail remains gallery-white */
+.artwork-detail-page,
+.artwork-detail,
+.artwork-detail-image,
+.artwork-detail-panel,
+.artwork-back{background:#fff!important}
+
+@media(max-width:850px){
+  .hero{min-height:420px!important}
+  .header{background:var(--midnight)!important}
+  .header .brand:before{color:var(--paper)!important}
+  .header>label.menu:before,.header>label.menu:after{background:var(--paper)!important}
+  .header>label.menu:before{box-shadow:0 4.5px 0 var(--paper)!important}
+  .header .menu-toggle:checked ~ nav{
+    background:var(--midnight)!important;
+    color:var(--paper)!important;
+  }
+  .header nav a{color:var(--paper)!important}
+}
