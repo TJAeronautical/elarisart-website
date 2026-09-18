@@ -8,27 +8,23 @@
 
 /* Elaris editorial shipping page */
 .shipping-page{background:var(--ivory)}
-.shipping-hero,.shipping-section,.shipping-contact{width:min(1180px,calc(100vw - 80px));margin:0 auto;display:grid;grid-template-columns:minmax(260px,.8fr) minmax(0,1.2fr);column-gap:90px;align-items:start}
-.shipping-hero{padding:72px 0 78px}
-.shipping-section,.shipping-contact{padding:62px 0;border-top:1px solid var(--line)}
-.shipping-hero h1,.shipping-section h2,.shipping-contact h2{font-family:var(--serif);font-weight:400;color:var(--navy);margin:0;letter-spacing:-.025em}
-.shipping-hero h1{font-size:clamp(48px,5vw,76px);line-height:.96}
-.shipping-section h2,.shipping-contact h2{font-size:clamp(30px,3vw,46px);line-height:1.04}
-.shipping-text{max-width:660px}
-.shipping-text p{margin:0 0 18px;font-size:15px;line-height:1.72;color:var(--ink)}
-.shipping-text p:last-child{margin-bottom:0}
-.shipping-hero .shipping-text p:first-child{font-family:var(--serif);font-size:20px;line-height:1.5}
-.shipping-email{display:inline-block;margin-top:20px;font-family:var(--serif);font-size:26px;color:var(--navy);border-bottom:1px solid var(--navy);padding-bottom:3px}
-.shipping-newsletter{margin-top:18px}
-.shipping-social{margin-top:28px;font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+.shipping-intro,.shipping-block{width:min(760px,calc(100vw - 80px));margin:0 auto}
+.shipping-intro{padding:72px 0 58px}
+.shipping-intro h1{font-family:var(--serif);font-weight:400;color:var(--navy);font-size:clamp(44px,5vw,72px);line-height:.98;letter-spacing:-.03em;margin:14px 0 26px}
+.shipping-lead{font-family:var(--serif);font-size:20px;line-height:1.5;margin:0;color:var(--ink)}
+.shipping-block{padding:42px 0 48px;border-top:1px solid var(--line)}
+.shipping-block h2{font-family:var(--serif);font-weight:400;color:var(--navy);font-size:clamp(30px,3.2vw,44px);line-height:1.08;letter-spacing:-.02em;margin:0 0 20px}
+.shipping-block p{font-size:15px;line-height:1.72;margin:0 0 16px;max-width:680px}
+.shipping-block p:last-of-type{margin-bottom:0}
+.shipping-contact{padding-bottom:78px}
+.shipping-email{display:inline-block;margin-top:22px;font-family:var(--serif);font-size:26px;color:var(--navy);border-bottom:1px solid var(--navy);padding-bottom:3px}
 @media(max-width:850px){
-  .shipping-hero,.shipping-section,.shipping-contact{width:calc(100vw - 64px);grid-template-columns:1fr;row-gap:22px}
-  .shipping-hero{padding:46px 0 52px}
-  .shipping-section,.shipping-contact{padding:42px 0}
-  .shipping-hero h1{font-size:40px}
-  .shipping-section h2,.shipping-contact h2{font-size:30px}
-  .shipping-text{max-width:none}
-  .shipping-text p{font-size:14px;line-height:1.68;margin-bottom:15px}
-  .shipping-hero .shipping-text p:first-child{font-size:17px}
-  .shipping-email{font-size:22px;margin-top:14px}
+  .shipping-intro,.shipping-block{width:calc(100vw - 64px)}
+  .shipping-intro{padding:48px 0 40px}
+  .shipping-intro h1{font-size:38px;margin:12px 0 20px}
+  .shipping-lead{font-size:17px;line-height:1.55}
+  .shipping-block{padding:34px 0 38px}
+  .shipping-block h2{font-size:29px;margin-bottom:16px}
+  .shipping-block p{font-size:14px;line-height:1.68}
+  .shipping-email{font-size:21px;margin-top:18px}
 }
