@@ -494,3 +494,18 @@ footer .footer-bottom{border-color:rgba(16,27,45,.12)!important}
     text-transform:uppercase!important;
   }
 }
+
+/* Match shipping intro paragraph to body copy */
+.shipping-lead{
+  font-family:var(--sans)!important;
+  font-size:15px!important;
+  line-height:1.72!important;
+  font-weight:300!important;
+  letter-spacing:0!important;
+}
+@media(max-width:850px){
+  .shipping-lead{
+    font-size:14px!important;
+    line-height:1.68!important;
+  }
+}
