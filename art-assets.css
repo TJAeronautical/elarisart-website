@@ -59,3 +59,15 @@ body.home-page .home-about::after{
   content:none!important;
   display:none!important;
 }
+
+/* Lower homepage artist label */
+body.home-page .artist-label{
+  padding-top:42px!important;
+  padding-bottom:22px!important;
+}
+@media(max-width:850px){
+  body.home-page .artist-label{
+    padding-top:36px!important;
+    padding-bottom:20px!important;
+  }
+}
