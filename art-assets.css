@@ -43,3 +43,19 @@ body.home-page .newsletter,
 body.home-page footer{
   background:#fff!important;
 }
+
+/* Remove homepage divider line */
+body.home-page .artist-label{
+  border-top:0!important;
+  border-bottom:0!important;
+}
+body.home-page .home-about{
+  border-top:0!important;
+}
+body.home-page .artist-label::before,
+body.home-page .artist-label::after,
+body.home-page .home-about::before,
+body.home-page .home-about::after{
+  content:none!important;
+  display:none!important;
+}
