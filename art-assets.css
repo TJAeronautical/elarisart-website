@@ -62,12 +62,12 @@ body.home-page .home-about::after{
 
 /* Lower homepage artist label */
 body.home-page .artist-label{
-  padding-top:42px!important;
+  padding-top:58px!important;
   padding-bottom:22px!important;
 }
 @media(max-width:850px){
   body.home-page .artist-label{
-    padding-top:36px!important;
+    padding-top:50px!important;
     padding-bottom:20px!important;
   }
 }
