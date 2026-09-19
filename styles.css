@@ -510,22 +510,11 @@ footer .footer-bottom{border-color:rgba(16,27,45,.12)!important}
   }
 }
 
-/* Match first shipping divider to section dividers */
+/* Match first shipping divider exactly to the lower section dividers */
 .shipping-intro{
-  position:relative!important;
   border-bottom:0!important;
 }
 .shipping-intro::after{
-  content:"";
-  position:absolute;
-  left:50%;
-  bottom:0;
-  transform:translateX(-50%);
-  width:min(760px,calc(100vw - 80px));
-  border-top:.5px solid rgba(16,27,45,.16);
-}
-@media(max-width:850px){
-  .shipping-intro::after{
-    width:calc(100vw - 64px);
-  }
+  content:none!important;
+  display:none!important;
 }
