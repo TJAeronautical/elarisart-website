@@ -522,7 +522,7 @@ footer .footer-bottom{border-color:rgba(16,27,45,.12)!important}
   bottom:0;
   transform:translateX(-50%);
   width:min(760px,calc(100vw - 80px));
-  border-top:1px solid var(--line);
+  border-top:.5px solid rgba(16,27,45,.16);
 }
 @media(max-width:850px){
   .shipping-intro::after{
