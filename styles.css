@@ -528,3 +528,32 @@ footer .footer-bottom{border-color:rgba(16,27,45,.12)!important}
 .artwork-media{
   background:#fff!important;
 }
+
+/* Full-strength homepage artwork hero */
+.hero{
+  background:#fff!important;
+  position:relative!important;
+  overflow:hidden!important;
+}
+.hero::before{
+  opacity:1!important;
+  mix-blend-mode:normal!important;
+  filter:none!important;
+  background-size:cover!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+  z-index:0!important;
+}
+.hero>*{
+  position:relative!important;
+  z-index:1!important;
+}
+@media(max-width:850px){
+  .hero{
+    min-height:calc(100svh - 184px)!important;
+    padding:0!important;
+  }
+  .hero::before{
+    background-position:center 42%!important;
+  }
+}
