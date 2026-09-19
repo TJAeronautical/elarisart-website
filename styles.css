@@ -483,3 +483,14 @@ footer .footer-bottom{border-color:rgba(16,27,45,.12)!important}
   }
   .header .menu-toggle:checked ~ nav a{position:relative;z-index:1}
 }
+
+/* Match mobile header font to editorial headings */
+@media(max-width:850px){
+  .header .brand:before{
+    font-family:var(--serif)!important;
+    font-size:24px!important;
+    font-weight:400!important;
+    letter-spacing:.08em!important;
+    text-transform:uppercase!important;
+  }
+}
