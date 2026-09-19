@@ -572,3 +572,42 @@ footer .footer-bottom{border-color:rgba(16,27,45,.12)!important}
   .hero{min-height:760px!important;background:#fff!important}
   .hero::before{background-position:center center!important}
 }
+
+/* Reliable homepage hero image element */
+.hero{
+  width:100%!important;
+  min-height:0!important;
+  padding:0!important;
+  margin:0!important;
+  display:block!important;
+  background:#fff!important;
+}
+.hero::before{
+  content:none!important;
+  display:none!important;
+}
+.hero-art-image{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  margin:0!important;
+}
+.hero-copy{
+  display:none!important;
+}
+@media(max-width:850px){
+  .hero{
+    width:100%!important;
+    min-height:0!important;
+    padding:0!important;
+  }
+  .hero-art-image{
+    width:100%!important;
+    height:auto!important;
+    max-height:none!important;
+    object-fit:cover!important;
+    object-position:center center!important;
+  }
+}
