@@ -589,3 +589,17 @@ footer .footer-bottom{border-color:rgba(16,27,45,.12)!important}
 .artist-label{
   background:#fff!important;
 }
+
+/* Homepage white surface cleanup */
+.home-page{
+  background:#fff!important;
+}
+.home-page .artist-label,
+.home-page .home-about,
+.home-page .quote,
+.home-page .newsletter{
+  background:#fff!important;
+}
+.home-page footer{
+  background:#fff!important;
+}
