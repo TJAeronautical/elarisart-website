@@ -32,3 +32,14 @@ html{background:#fff}
 @media(max-width:850px){
   .header .menu-toggle:checked ~ nav{gap:6px!important}
 }
+
+/* Force homepage surfaces to pure white */
+body.home-page,
+body.home-page main,
+body.home-page .artist-label,
+body.home-page .home-about,
+body.home-page .quote,
+body.home-page .newsletter,
+body.home-page footer{
+  background:#fff!important;
+}
