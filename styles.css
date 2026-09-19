@@ -584,3 +584,8 @@ footer .footer-bottom{border-color:rgba(16,27,45,.12)!important}
 @media(min-width:851px){
   .hero-art-image{height:min(82vh,60vw)!important;object-position:center 45%!important}
 }
+
+/* Homepage artist label white band */
+.artist-label{
+  background:#fff!important;
+}
