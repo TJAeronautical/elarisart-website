@@ -518,3 +518,13 @@ footer .footer-bottom{border-color:rgba(16,27,45,.12)!important}
   content:none!important;
   display:none!important;
 }
+
+/* Artworks page pure white background */
+.artworks-page,
+.artworks-intro,
+.artworks-list{
+  background:#fff!important;
+}
+.artwork-media{
+  background:#fff!important;
+}
